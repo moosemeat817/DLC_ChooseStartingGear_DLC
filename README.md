@@ -2,7 +2,7 @@
 **This version of Choose Starting Gear is ONLY compatible with the paid DLC for *The Long Dark*.**  
 If you don’t have the DLC, this mod will not work correctly.  
 
-👉 **IMPORTANT:** You must **remove the older non-DLC version** of this mod before installing this version.  
+👉 **IMPORTANT:** You must **remove the older non-DLC version and the .json file** of this mod before installing this version.  
 
 ---
 
