@@ -17,7 +17,7 @@ namespace DLC_ChooseStartingGear_DLC
     public enum HeadOuter
     {
         None, GEAR_BaseballCap, GEAR_CottonScarf, GEAR_BasicWoolHat, GEAR_WoolWrapCap, GEAR_WoolWrap, GEAR_RabbitskinHat, GEAR_BasicWoolScarf, GEAR_Toque,
-        GEAR_CougarWrap, GEAR_MinersHelmet, GEAR_WolfSkinHat
+        GEAR_CougarWrap, GEAR_MinersHelmet, GEAR_WolfSkinHat, GEAR_wolfscarf, GEAR_WolfskinCap_MOD
     }
     public enum HeadInner
     {
@@ -28,18 +28,18 @@ namespace DLC_ChooseStartingGear_DLC
     {
         None, GEAR_BearSkinCoat, GEAR_DownVest, GEAR_PremiumWinterCoat, GEAR_SkiJacket, GEAR_MackinawJacket, GEAR_QualityWinterCoat, GEAR_MilitaryParka, GEAR_MooseHideCloak,
         GEAR_HeavyParka, GEAR_LightParka, GEAR_DownSkiJacket, GEAR_InsulatedVest, GEAR_DownParka, GEAR_BasicWinterCoat, GEAR_WolfSkinCape,
-        GEAR_MinersJacket, GEAR_TacticalJacket
+        GEAR_MinersJacket, GEAR_TacticalJacket, GEAR_DeerskinCoat_MOD
     }
     public enum TorsoInner
     {
         None, GEAR_CowichanSweater, GEAR_CottonShirt, GEAR_FishermanSweater, GEAR_CottonHoodie, GEAR_PlaidShirt, GEAR_FleeceSweater,
         GEAR_HeavyWoolSweater, GEAR_WoolSweater, GEAR_TeeShirt, GEAR_WoolShirt,
-        GEAR_TShirtSnappy, GEAR_TShirtGBI, GEAR_TShirtCM, GEAR_SweaterChristmasA
+        GEAR_TShirtSnappy, GEAR_TShirtGBI, GEAR_TShirtCM, GEAR_SweaterChristmasA, GEAR_JerseyHockeyA
     }
     public enum Hands
     {
         None, GEAR_BasicGloves, GEAR_FleeceMittens, GEAR_Gauntlets, GEAR_RabbitSkinMittens, GEAR_SkiGloves, GEAR_Mittens, GEAR_WorkGloves,
-        GEAR_MittenBrownStripe, GEAR_MittenBlueStripe, GEAR_MittenBurgundyPattern, GEAR_TacticalGloves
+        GEAR_MittenBrownStripe, GEAR_MittenBlueStripe, GEAR_MittenBurgundyPattern, GEAR_TacticalGloves, GEAR_DeerskinGloves_MOD
     }
     public enum AccessoriesInner
     {
@@ -56,7 +56,7 @@ namespace DLC_ChooseStartingGear_DLC
     }
     public enum LegsInner
     {
-        None, GEAR_LongUnderwear, GEAR_LongUnderwearWool
+        None, GEAR_LongUnderwear, GEAR_LongUnderwearWool, GEAR_BearskinLeggings_MOD
     }
     public enum FeetInner
     {
@@ -66,7 +66,7 @@ namespace DLC_ChooseStartingGear_DLC
     public enum FeetOuter
     {
         None, GEAR_CombatBoots, GEAR_DeerSkinBoots, GEAR_InsulatedBoots, GEAR_LeatherShoes, GEAR_GreyMotherBoots, GEAR_MuklukBoots, GEAR_BasicShoes, GEAR_SkiBoots,
-        GEAR_BasicBoots, GEAR_WorkBoots, GEAR_MinersBoots
+        GEAR_BasicBoots, GEAR_WorkBoots, GEAR_MinersBoots, GEAR_WolfskinBoots_MOD
     }
 
     // Fire Starting
@@ -168,7 +168,7 @@ namespace DLC_ChooseStartingGear_DLC
         [Name("Outer Slot Item")]
         [Description("Choose clothing item for this slot")]
         [Choice("None", "Baseball Cap", "Cotton Scarf", "Cotton Toque", "Fleece Cowl", "Long Wool Scarf", "Rabbitskin Hat", "Wool Scarf", "Wool Toque",
-                "Cougar Hide Wrap", "Miner's Helmet", "Wolfskin Hat")]
+                "Cougar Hide Wrap", "Miner's Helmet", "Wolfskin Hat", "Wolf Scarf (MOD)", "Wolfskin Cap (MOD)")]
         public HeadOuter headOuter = HeadOuter.None;
 
         [Name("    Item Condition")]
@@ -192,7 +192,7 @@ namespace DLC_ChooseStartingGear_DLC
         [Description("Choose clothing item for this slot")]
         [Choice("None", "Bearskin Coat", "Down Vest", "Expedition Parka", "Light Shell", "Mackinaw Jacket", "Mariner's Pea Coat", "Military Coat", "Moose-Hide Cloak",
                 "Old Fashioned Parka", "Simple Parka", "Ski Jacket", "Sport Vest", "Urban Parka", "Windbreaker", "Wolfskin Coat",
-                "Miner's Jacket", "Tactical Jacket")]
+                "Miner's Jacket", "Tactical Jacket", "Deerskin Coat (MOD)")]
         public TorsoOuter torsoOuterOuter = TorsoOuter.None;
 
         [Name("    Item Condition")]
@@ -204,7 +204,7 @@ namespace DLC_ChooseStartingGear_DLC
         [Description("Choose clothing item for this slot")]
         [Choice("None", "Bearskin Coat", "Down Vest", "Expedition Parka", "Light Shell", "Mackinaw Jacket", "Mariner's Pea Coat", "Military Coat", "Moose-Hide Cloak",
                 "Old Fashioned Parka", "Simple Parka", "Ski Jacket", "Sport Vest", "Urban Parka", "Windbreaker", "Wolfskin Coat",
-                "Miner's Jacket", "Tactical Jacket")]
+                "Miner's Jacket", "Tactical Jacket", "Deerskin Coat (MOD)")]
         public TorsoOuter torsoOuterInner = TorsoOuter.None;
 
         [Name("    Item Condition")]
@@ -218,7 +218,7 @@ namespace DLC_ChooseStartingGear_DLC
         [Description("Choose clothing item for this slot")]
         [Choice("None", "Cowichan Sweater", "Dress Shirt", "Fisherman's Sweater", "Hoodie", "Plaid Shirt", "Sweatshirt", "Thick Wool Sweater",
                 "Thin Wool Sweater", "T-Shirt", "Wool Shirt",
-                "T-Shirt (Snappy)", "T-Shirt (GBI)", "T-Shirt (CM)", "Festive Sweater")]
+                "T-Shirt (Snappy)", "T-Shirt (GBI)", "T-Shirt (CM)", "Festive Sweater", "Hockey Jersey A")]
         public TorsoInner torsoInnerOuter = TorsoInner.None;
 
         [Name("    Item Condition")]
@@ -230,7 +230,7 @@ namespace DLC_ChooseStartingGear_DLC
         [Description("Choose clothing item for this slot")]
         [Choice("None", "Cowichan Sweater", "Dress Shirt", "Fisherman's Sweater", "Hoodie", "Plaid Shirt", "Sweatshirt", "Thick Wool Sweater",
                 "Thin Wool Sweater", "T-Shirt", "Wool Shirt",
-                "T-Shirt (Snappy)", "T-Shirt (GBI)", "T-Shirt (CM)", "Festive Sweater")]
+                "T-Shirt (Snappy)", "T-Shirt (GBI)", "T-Shirt (CM)", "Festive Sweater", "Hockey Jersey A")]
         public TorsoInner torsoInnerInner = TorsoInner.None;
 
         [Name("    Item Condition")]
@@ -242,7 +242,7 @@ namespace DLC_ChooseStartingGear_DLC
         [Name("Hands Slot Item")]
         [Description("Choose clothing item for this slot")]
         [Choice("None", "Driving Gloves", "Fleece Mittens", "Gauntlets", "Rabbitskin Mitts", "Ski Gloves", "Wool Mittens", "Work Gloves",
-                "Patterned Wool Mittens (Brown)", "Patterned Wool Mittens (Blue)", "Patterned Wool Mittens (Burgundy)", "Tactical Gloves")]
+                "Patterned Wool Mittens (Brown)", "Patterned Wool Mittens (Blue)", "Patterned Wool Mittens (Burgundy)", "Tactical Gloves", "Deerskin Gloves (MOD)")]
         public Hands hands = Hands.None;
 
         [Name("    Item Condition")]
@@ -298,7 +298,7 @@ namespace DLC_ChooseStartingGear_DLC
 
         [Name("Outer Slot Item")]
         [Description("Choose clothing item for this slot")]
-        [Choice("None", "Thermal Underwear", "Wool Longjohns")]
+        [Choice("None", "Thermal Underwear", "Wool Longjohns", "Bearskin Leggings (MOD)")]
         public LegsInner legsInnerOuter = LegsInner.None;
 
         [Name("    Item Condition")]
@@ -308,7 +308,7 @@ namespace DLC_ChooseStartingGear_DLC
 
         [Name("Inner Slot Item")]
         [Description("Choose clothing item for this slot")]
-        [Choice("None", "Thermal Underwear", "Wool Longjohns")]
+        [Choice("None", "Thermal Underwear", "Wool Longjohns", "Bearskin Leggings (MOD)")]
         public LegsInner legsInnerInner = LegsInner.None;
 
         [Name("    Item Condition")]
@@ -343,7 +343,7 @@ namespace DLC_ChooseStartingGear_DLC
         [Name("Shoe Slot Item")]
         [Description("Choose clothing item for this slot")]
         [Choice("None", "Combat Boots", "Deerskin Boots", "Insulated Boots", "Leather Shoes", "Mountaineering Boots", "Mukluks", "Running Shoes", "Ski Boots", "Trail Boots", "Work Boots",
-                "Miner's Boots")]
+                "Miner's Boots", "Wolfskin Boots (MOD)")]
         public FeetOuter feetOuter = FeetOuter.None;
 
         [Name("    Item Condition")]
@@ -623,7 +623,7 @@ namespace DLC_ChooseStartingGear_DLC
         [Name("    Ammunition")]
         [Description("Quantity of Ammunition for chosen Weapon")]
         [Slider(0, 25)]
-        public int ammunitionQty = 0;       
+        public int ammunitionQty = 0;
 
         [Name("Whetstone")]
         public bool whetstone = false;
@@ -684,7 +684,6 @@ namespace DLC_ChooseStartingGear_DLC
         [Name("Show Ammunition")]
         [Description("Show/Hide menu. Any selected items WILL be added even if menu is hidden.")]
         public bool ammunition = false;
-
 
         [Name("Arrowhead")]
         [Slider(0, 5)]
@@ -972,7 +971,6 @@ namespace DLC_ChooseStartingGear_DLC
             SetFieldVisible(nameof(arrowType), Settings.settings.modFunction != ModFunction.Default && tools);
 
             // DLC Tools
-            SetFieldVisible(nameof(heatPad), Settings.settings.modFunction != ModFunction.Default && tools);
             SetFieldVisible(nameof(stickFlask), Settings.settings.modFunction != ModFunction.Default && tools);
             SetFieldVisible(nameof(camera), Settings.settings.modFunction != ModFunction.Default && tools);
             SetFieldVisible(nameof(filmBoxColour), Settings.settings.modFunction != ModFunction.Default && tools);
@@ -1027,6 +1025,7 @@ namespace DLC_ChooseStartingGear_DLC
             SetFieldVisible(nameof(scrapMetal), Settings.settings.modFunction != ModFunction.Default && materials && other);
         }
     }
+    
     internal static class Settings
     {
         public static ChooseStartingGearSettings settings;
