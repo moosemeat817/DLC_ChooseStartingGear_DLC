@@ -386,9 +386,8 @@ namespace DLC_ChooseStartingGear_DLC
             GearItem newClothingItem;
             if (condition > 0)
             {
-                // Use normalized condition (0.0 to 1.0 range)
-                float normalizedCondition = condition / 100f; // Assuming condition is passed as percentage
-                newClothingItem = GameManager.GetPlayerManagerComponent().InstantiateItemInPlayerInventory(gearItemPrefab, 1, normalizedCondition);
+                // Condition is already normalized (0.0 to 1.0 range) from the slider settings
+                newClothingItem = GameManager.GetPlayerManagerComponent().InstantiateItemInPlayerInventory(gearItemPrefab, 1, condition);
             }
             else
             {
