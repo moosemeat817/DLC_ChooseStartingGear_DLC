@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using ComplexLogger;
 using ModSettings;
 using static Il2Cpp.FSMHierarchy;
 
