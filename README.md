@@ -1,8 +1,4 @@
-# ⚠️🚨 **WARNING – DLC ONLY!** 🚨⚠️
-**This version of Choose Starting Gear is ONLY compatible with the paid DLC for *The Long Dark*.**  
-If you don’t have the DLC, this mod will not work correctly.  
-
-👉 **IMPORTANT:** You must **remove the older non-DLC version and the .json file** of this mod before installing this version.  
+👉 **IMPORTANT:** This mod has been replaced by Choose Starting Gear Redux.  If you were previously using this mod, remove it and download [Choose Starting Gear Redux]([https://ko-fi.com/moosemeat817](https://github.com/moosemeat817/ChooseStartingGearRedux/releases)) 
 
 ---
 
