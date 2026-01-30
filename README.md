@@ -8,7 +8,7 @@
 ---
 ---
 
-# Choose Starting Gear (DLC Edition)  
+# DO NOT USE!!!!!!!!! - Choose Starting Gear (DLC Edition)  
 This mod allows you to choose your starting gear when starting a new game.  
 
 The idea is to let you choose whatever you want to enable a more varied experience.  
