@@ -1,4 +1,21 @@
-👉 **IMPORTANT:** This mod has been replaced by Choose Starting Gear Redux.  If you were previously using this mod, remove it and download [Choose Starting Gear Redux]([https://ko-fi.com/moosemeat817](https://github.com/moosemeat817/ChooseStartingGearRedux/releases)) 
+👉 **IMPORTANT:** This mod has been replaced by Choose Starting Gear Redux.  If you were previously using this mod, remove it and download [Choose Starting Gear Redux]([https://ko-fi.com/moosemeat817](https://github.com/moosemeat817/ChooseStartingGearRedux/releases) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
